@@ -1,0 +1,106 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: Raleway;
+}
+.content{
+    margin:0 auto;
+    max-width: 1230px;
+    min-height: 1024px;
+}
+
+.intro{
+    margin:0 auto;
+    background-image: url("../img/bg-photo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    & .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__logo{
+        display: flex;
+        align-items: center;
+        font-size: 34px;
+        line-height: 1.2;
+        color: #fff;
+        text-decoration: none;
+        
+        &-svg{
+          fill:#fff;
+        }
+        &-svg:hover{
+            fill:rgb(199, 178, 153);
+        }
+    }
+    &__logo:hover{
+        color: rgb(199, 178, 153);
+    }
+    &__header{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__nav-items{
+        display: flex;
+
+        justify-content: space-around;
+    }
+    &__nav-item{
+        list-style-type: none;
+        color:#fff;
+    }
+
+    &__mainText{
+        display: flex;
+        justify-content: space-between;
+        
+        &-same{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color:#fff;
+        }
+        &-btn-link{
+            min-width: 170px;
+            // box-shadow: inset 0px 3px 0px 0px rgba(115, 99, 87, 0.004);
+            padding: 10px;
+            box-sizing: border-box;
+            
+            display: flex;
+            border: none;
+            // border-bottom: 3px solid #736357;
+            border-radius: 10px;
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: none;
+            background-color: #998675;
+            color: #fff;
+        }
+        &-btn-txt{
+            text-align: center;
+        }
+    }
+
+    &__switchers{
+        width: 180px;
+        display: flex;
+        justify-content: space-between;
+        
+        &-item{
+            display: block;
+            width: 25px;
+            height: 25px;
+            background-color: #ccc;
+            border-radius: 50%;
+            border:2px solid transparent #fff;
+        }
+        &-item:hover{
+            background-color: transparent;
+            border:2px solid gold;
+            transform: scale(1.2);
+        }
+    }
+}
+
