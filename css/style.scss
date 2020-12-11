@@ -19,6 +19,7 @@ body{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        // padding:60px 0 44px 0;
     }
     &__logo{
         display: flex;
@@ -44,14 +45,27 @@ body{
     }
     &__nav-items{
         display: flex;
-
         justify-content: space-around;
     }
     &__nav-item{
         list-style-type: none;
         color:#fff;
     }
+    &__nav-search input{
+        width: 40px;
+        height: 40px;
+        outline: none;
+        background-image: url('https://cdn.pixabay.com/photo/2017/01/13/01/22/magnifying-glass-1976105_960_720.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        border: 1px solid gray;
 
+    }
+    &__nav-search input:focus{
+        width: 300px;
+        transition: width 1s ease-out;
+        background-position: right;
+    }
     &__mainText{
         display: flex;
         justify-content: space-between;
@@ -64,13 +78,10 @@ body{
         }
         &-btn-link{
             min-width: 170px;
-            // box-shadow: inset 0px 3px 0px 0px rgba(115, 99, 87, 0.004);
             padding: 10px;
             box-sizing: border-box;
-            
-            display: flex;
             border: none;
-            // border-bottom: 3px solid #736357;
+            border-bottom: 3px solid #736357;
             border-radius: 10px;
             text-align: center;
             text-transform: uppercase;
@@ -78,20 +89,21 @@ body{
             background-color: #998675;
             color: #fff;
         }
-        &-btn-txt{
-            text-align: center;
-        }
     }
 
     &__switchers{
-        width: 180px;
+        margin:0 auto;
+        width: 97px;
         display: flex;
         justify-content: space-between;
         
+        
+        
         &-item{
             display: block;
-            width: 25px;
-            height: 25px;
+            box-sizing: border-box;
+            width: 11px;
+            height: 11px;
             background-color: #ccc;
             border-radius: 50%;
             border:2px solid transparent #fff;
@@ -104,3 +116,5 @@ body{
     }
 }
 
+
+  

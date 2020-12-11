@@ -77,6 +77,23 @@ body {
   color: #fff;
 }
 
+.intro__nav-search input {
+  width: 40px;
+  height: 40px;
+  outline: none;
+  background-image: url("https://cdn.pixabay.com/photo/2017/01/13/01/22/magnifying-glass-1976105_960_720.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 1px solid gray;
+}
+
+.intro__nav-search input:focus {
+  width: 300px;
+  -webkit-transition: width 1s ease-out;
+  transition: width 1s ease-out;
+  background-position: right;
+}
+
 .intro__mainText {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -105,10 +122,8 @@ body {
   padding: 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   border: none;
+  border-bottom: 3px solid #736357;
   border-radius: 10px;
   text-align: center;
   text-transform: uppercase;
@@ -117,12 +132,9 @@ body {
   color: #fff;
 }
 
-.intro__mainText-btn-txt {
-  text-align: center;
-}
-
 .intro__switchers {
-  width: 180px;
+  margin: 0 auto;
+  width: 97px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -133,8 +145,10 @@ body {
 
 .intro__switchers-item {
   display: block;
-  width: 25px;
-  height: 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 11px;
+  height: 11px;
   background-color: #ccc;
   border-radius: 50%;
   border: 2px solid transparent #fff;
