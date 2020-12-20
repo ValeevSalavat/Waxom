@@ -79,18 +79,15 @@ body {
 }
 
 .intro__nav-items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  max-width: 500px;
+  margin: 0;
+  padding: 0;
 }
 
 .intro__nav-item {
   list-style-type: none;
   color: #fff;
+  width: 80px;
+  border: 1px solid #fff;
 }
 
 .intro__nav-item:hover {

@@ -50,15 +50,19 @@ body{
         display: flex;
         justify-content: space-around;
         align-items: center;
-    }
+    } 
     &__nav-items{
-        display: flex;
-        justify-content: center;
-        max-width: 500px;
+        margin:0;
+        padding:0;
+        // display: flex;
+        // justify-content: center;
+        // max-width: 500px;
     }
     &__nav-item{
         list-style-type: none;
         color:#fff;
+        width: 80px;
+        border:1px solid #fff;
     }
     &__nav-item:hover{
         color: rgb(199, 178, 153);
