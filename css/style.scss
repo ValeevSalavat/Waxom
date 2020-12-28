@@ -1,351 +1,122 @@
-body{
-    margin:0;
-    padding:0;
-    font-family: Raleway;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
 }
-.content{
-    margin:0 auto;
+
+.content {
+    margin: 0 auto;
     max-width: 1230px;
 }
 
+.header {
+    background-image: url('../img/bg-photo.png');
+    min-height: 1024px;
+    padding: 40px 0 0 0;
+    color: #ffffff;
 
-.intro{
-    margin:0 auto;
-    background-image: url("../img/bg-photo.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    box-sizing: border-box;
-    
-    & .content{
-        min-height: 1024px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    &__logo{
+    &__logo {
         display: flex;
         align-items: center;
-        font-size: 34px;
-        line-height: 1.2;
-        color: #fff;
-        text-decoration: none;
-        
-        &-svg{
-          fill:#fff;
+
+        &-svg {
+            fill: #ffffff;
         }
-        &-svg:hover{
-            fill:rgb(199, 178, 153);
+
+        &-txt {
+            font-size: 34px;
+            color: #ffffff;
+            text-decoration: none;
+
         }
+
     }
-    &__logo:hover{
-        color: rgb(199, 178, 153);
+
+    &__logo:hover {
+        color: #c7b299;
+        fill: #c7b299;
     }
-    &__header{
+
+    &__menu {
+        margin: 0;
+        padding: 0;
         display: flex;
         justify-content: space-between;
-    }
-    &__nav{
-        max-width: 770px;
-        display: flex;
-        justify-content: space-around;
         align-items: center;
-    } 
-    &__nav-items{
-        margin:0;
-        padding:0;
-        // display: flex;
-        // justify-content: center;
-        // max-width: 500px;
     }
-    &__nav-item{
-        list-style-type: none;
-        color:#fff;
-        width: 80px;
-        border:1px solid #fff;
-    }
-    &__nav-item:hover{
-        color: rgb(199, 178, 153);
-        cursor: pointer;
-    }
-    &__nav-trash{
-        border:none;
-        background-color: transparent;
-        outline: none;
-    }
-    &__nav-trash svg{
-        fill:#fff;
-    }
-    &__search-form{
-        width: 30px;
-        height:30px;
-        margin:0 0 0 0;
-        position: relative;
-        &-label{
-            display: block;
-            width: 100%;
-            height: 100%;
-            background-image: url('https://findicons.com/files/icons/2813/flat_jewels/512/search.png');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-color: transparent;
+
+    &__nav {
+        &-items {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            min-width: 770px;
         }
-        &-input{
-            width:0;
-            min-height: 0;
-            padding:5px;
-            outline:0;
-            box-sizing: border-box;
-            background-color: transparent;
-            border:none;
-            position:absolute;
-            top:40px;
-            left:-119px;
-            color:#fff;
-            font-size:16px;
-            font-family: Arial, Helvetica, sans-serif;
-            text-transform: capitalize;
-        }
-        &-input:focus{
-            width:150px;
-            min-height:20px;
-            transition:width 1s ease;
-            border:2px solid #fff;
+
+        &-item {
+            font-size: 14px;
+            font-weight: 300;
+
+            &-form,
+            &-bin {
+                width: 30px;
+                height: 30px;
+            }
+
+            &-bin-i {
+                width: 100%;
+                height: 100%;
+                background-image: url("../img/bin.svg");
+                background-color: transparent;
+                border: transparent;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+            &-input {
+                width: 100%;
+                height: 100%;
+                outline: none;
+                background-image: url("../img/loupe.svg");
+                background-color: transparent;
+                background-size: contain;
+                background-repeat: no-repeat;
+                fill: aquamarine;
+                border: transparent;
+                color: transparent;
+            }
+
+            &-input:focus {
+                width: 300px;
+                transition: width 1s ease-out;
+                background-position: right;
+                border: 1px solid #ffffff;
+                color: #ffffff;
+            }
         }
     }
 
-    &__mainText{
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        max-width: 1230px;
-        
-        &-same{
+    &__carusel {
+        margin: 284px 0 0 0;
+        text-align: center;
+
+        &-text {
             display: flex;
             flex-direction: column;
-            align-items: center;
-            color:#fff;
-        }
-        &-btn-link{
-            min-width: 170px;
-            padding: 10px;
-            box-sizing: border-box;
-            border: none;
-            border-bottom: 3px solid #736357;
-            border-radius: 10px;
-            text-align: center;
-            text-transform: uppercase;
-            text-decoration: none;
-            background-color: #998675;
-            color: #fff;
-        }
-    }
-    &__btn-left, &__btn-right{
-        display: block;
-        width: 20px;
-        height: 20px;
-        margin: 40px;
-        position: relative;
-        
-        &:after{
-            content: "";
-            display: block;
-            width: 52px;
-            height: 0px;
-            border: 2px solid #d3c1ad;
-            transform: rotate(-225deg);
-            position: absolute;
-            top: 0px;
-            left: 0;
-            opacity: 0.5;
-        }
-        &:before{
-            content: "";
-            display: block;
-            width: 52px;
-            height: 0px;
-            border: 2px solid #d3c1ad;
-            transform: rotate(225deg);
-            position: absolute;
-            top: 38px;
-            left: 0;
-            opacity: 0.5;
-        }
-    }
+            max-width: 590px;
+            margin: 0 auto;
 
-    &__btn-right{
-        &:after{
-            transform: rotate(225deg);
-        }
-        &:before{
-            transform: rotate(-225deg);
-        }
-    }
-    &__txt1{
-        font-size:36px;
-        margin:0 0 15px 0;
-    }
-    &__txt2{
-        font-size:52px;
-        margin:0 0 20px 0;
-    }
-    &__txt3{
-        font-size:16px;
-        max-width: 570px;
-        word-break: break-all;
-        text-align: center;
-        line-height: 1.5;
-        margin:0 0 32px 0;
-    }
-      
+            &-1 {
+                font-size: 36px;
+            }
 
-    &__switchers{
-        margin:0 auto;
-        width: 97px;
-        display: flex;
-        justify-content: space-between;
-        // margin: 0 0 40px 0;
-        
-        &-item{
-            display: block;
-            box-sizing: border-box;
-            width: 11px;
-            height: 11px;
-            background-color: #ccc;
-            border-radius: 50%;
-            border:2px solid transparent #fff;
-        }
-        &-item:hover{
-            background-color: transparent;
-            border:2px solid gold;
-            transform: scale(1.2);
+            &-2 {
+                font-size: 52px;
+            }
+
+            &-3 {
+                font-size: 16px;
+            }
         }
     }
 }
-
-.abilities{
-    display: flex;
-    justify-content: space-between;
-    padding: 80px 0 80px 0;
-    color:#555555;
- 
-    &__figure{
-        max-width: 272px;
-        text-align: center;
-        & hr{
-            width:70px;
-        }
-        &:hover{
-            color:#998675;
-        }
-    }
-    &__img{
-        fill:#998675;
-        margin: 0 0 20px 0;
-        &:hover{
-            fill:#998675;
-        }
-    }
-    &__info{
-        
-        &-header{
-            font-size:22px;
-            margin:0 0 20px 0;
-            cursor: pointer;
-        }
-        &-text{
-            font-size: 14px;
-            line-height: 1.714;
-            cursor: pointer;
-            margin:0 0 30px 0;
-        }
-    }
-}
-
-.realizedProj{
-    background-color: #fbfaf8;
-    padding:83px 0 0 0;
-    text-align: center;
-    color: rgb(85, 85, 85);
-
-    &__header{
-        margin:0 auto 30px auto;
-        font-size: 30px;
-    }
-    &__text{
-        line-height: 1.75;
-        width: 725px;
-        margin:0 auto;
-        font-size: 16px;
-    }
-    &__multiPhoto{
-        width: 100%;
-        min-height: 466px;
-        background-image: url('../img/browser-left.png'),
-                          url('../img/browser-center.png'),
-                          url('../img/browser-right.png');
-
-        background-size: 60%, 40%, 40%;
-        background-repeat: no-repeat;
-        background-position: bottom center, bottom left, bottom right; 
-    }
-}
-
-
-.multipropose {
-    width: 100%;
-    min-height: 150px;
-    padding: 48px 0 48px 0;
-    margin:0 auto;
-    box-sizing: border-box;
-    background-image: -moz-linear-gradient( 0deg, rgb(33,27,25) 0%, rgb(78,52,39) 100%);
-    background-image: -webkit-linear-gradient( 0deg, rgb(33,27,25) 0%, rgb(78,52,39) 100%);
-    background-image: -ms-linear-gradient( 0deg, rgb(33,27,25) 0%, rgb(78,52,39) 100%);
-  
-    & .content{
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    &__title{
-        width: 100%;
-        margin: 0;
-        font-size: 28px;
-        color: #fff;
-        line-height: 1.2;
-        text-align: left;
-        & span{
-            color: rgb(199, 178, 153);
-        }
-    }
-
-    &__txt{
-        width: 100%;
-        margin: 0;
-        font-size: 18px;
-        font-family: "Montserrat";
-        color: rgb(97, 88, 85);
-        line-height: 1.2;
-        text-align: left;
-    }
-    &__button{
-        width: 170px;
-        min-height: 50px;
-        border: none;
-        border-bottom: 2px solid #736357;
-        border-radius: 3px;
-        background-color: #998675;
-        box-shadow: inset 0px 3px 0px 0px rgba(115, 99, 87, 0.004);
-
-        &-txt{
-            font-size: 14px;
-            font-family: "Raleway";
-            color: rgb(255, 255, 255);
-            font-weight: bold;
-            text-transform: uppercase;
-            line-height: 1.643;
-            text-align: center;
-        }
-    }
-}
-
