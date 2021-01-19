@@ -5,12 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Waxom</title>
     <link href="css/style.css" rel="stylesheet" type="text/css"> 
+    <link href="css/normalize.css" rel="stylesheet" type="text/css"> 
 
 </head>
 <body>
     <section class="header">
-        <div class="content">
             <menu class="header__menu">
+                <input id="header__menu-toggle" type="checkbox">
+                <label class="header__menu-btn" for="header__menu-toggle" >
+                    <span class="header__menu-btn-pic"></span>
+                </label>
+
                 <a href="index.html" class="header__logo">
                     <svg class="header__logo-svg" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -19,24 +24,23 @@
                     </svg>
                     <span class="header__logo-txt">Waxom</span>
                 </a>
-                <nav class="header__nav">
-                    <ul class="header__nav-items">
-                        <li class="header__nav-item">Home</li>
-                        <li class="header__nav-item">About us</li>
-                        <li class="header__nav-item">Portfolio</li>     
-                        <li class="header__nav-item">Blog</li>
-                        <li class="header__nav-item">Pricing</li>
-                        <li class="header__nav-item">Shortcodes</li>
-                        <li class="header__nav-item">Contact</li>
-                        <li class="header__nav-item-bin">
-                            <button class="header__nav-item-bin-i"></button>
-                        </li>
-                        <li class="header__nav-item">
+                
+                <nav class="header__nav-items">
+                        <a href="#" class="header__nav-item">Home</a>
+                        <a href="#" class="header__nav-item">About us</a>
+                        <a href="#" class="header__nav-item">Portfolio</a>     
+                        <a href="#" class="header__nav-item">Blog</a>
+                        <a href="#" class="header__nav-item">Pricing</a>
+                        <a href="#" class="header__nav-item">Shortcodes</a>
+                        <a href="#" class="header__nav-item">Contact</a>
+                        <a href="#" class="header__nav-item">
+                            <button class="header__nav-item-bin"></button>
+                        </a>
+                        <a class="header__nav-item">
                             <form action="" class="header__nav-item-form">
                                 <input type="search" class="header__nav-item-input">
                             </form>
-                        </li>
-                    </ul>
+                        </a>
                 </nav>
             </menu>
 
@@ -58,11 +62,9 @@
                 <a href="#" class="header__pagination-item"></a>
                 <a href="#" class="header__pagination-item"></a>
             </div>
-            </section>
-        </div>
     </section>
     
-    <section class="features">
+    <section class="features content">
             <figure class="features__item">
                 <svg class="features__img" 
                     xmlns="http://www.w3.org/2000/svg"
@@ -173,13 +175,13 @@
     <section class="projects content">
         <h1 class="projects__header">Our Latest Projects</h1>
         <p class="projects__text">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-        <ul class="projects__nav">
-            <li class="projects__nav-item">All</li>
-            <li class="projects__nav-item">Web Design</li>
-            <li class="projects__nav-item">Mobile App</li>
-            <li class="projects__nav-item">Illustration</li>
-            <li class="projects__nav-item">Photography</li>
-        </ul>
+        <div class="projects__nav">
+            <button class="projects__nav-item">All</button>
+            <button class="projects__nav-item">Web Design</button>
+            <button class="projects__nav-item">Mobile App</button>
+            <button class="projects__nav-item">Illustration</button>
+            <button class="projects__nav-item">Photography</button>
+        </div>
         <div class="projects__images content">
             <figure class="projects__img">
                 <figcaption class="projects__img-text">
@@ -446,7 +448,6 @@
         <video id = "video"
                class="video-presentation__video"     
                height="700"
-
                muted
                src='./video/Empty Spanish Historical Center.mp4'
                poster="./img/video-frame.png"></video>
@@ -465,9 +466,11 @@
         </div>
     </section>
     <section class="mobile-dev content">
+        <img src="./img/mobile.png" alt="#" height="616" class="mobile-dev__img">
         <article class="mobile-dev__content">
             <h1 class="mobile-dev__header">Excellent for Mobile Devices.</h1>
             <p class="mobile-dev__text">Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius claritas. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+            <img src="./img/mobile.png" alt="#" height="308" class="mobile-dev__img-mobile-site">
             <ul class="mobile-dev__items">
                 <li class="mobile-dev__item">Nam liber tempor cum soluta nobis eleifend option;</li>
                 <li class="mobile-dev__item">Option congue nihil imperdiet doming id quod mazim placerat facer;</li>
@@ -477,7 +480,7 @@
         </article>
     </section>
 
-    <aside class="statistics">
+    <section class="statistics">
         <figure class="statistics__item">
             <img src="./img/stat-icon1.svg" alt="#" class="statistics__item-img">
             <figcaption class="statistics__item-noimgcontect">
@@ -513,7 +516,7 @@
                 <p class="statistics__item-text">we lauched</p>
             </figcaption>
         </figure>
-    </aside>
+    </section>
 
     <section class="recentpost content">
         <h1 class="recentpost__header">Recent Posts.</h1>
@@ -587,14 +590,15 @@
     </section>
 
     <section class="logos">
-        <figure class="logos__fig"><img src="./img/logos-1.png" alt="#" class="logos__fig-img"></figure>
-        <figure class="logos__fig"><img src="./img/logos-2.png" alt="#" class="logos__fig-img"></figure>
-        <figure class="logos__fig"><img src="./img/logos-3.png" alt="#" class="logos__fig-img"></figure>
-        <figure class="logos__fig"><img src="./img/logos-4.png" alt="#" class="logos__fig-img"></figure>
+        <a class="logos__fig" href="#">
+            <img src="./img/logos-1.png" alt="#" >
+        </a>
+        <a class="logos__fig" href="#"><img src="./img/logos-2.png" alt="#" ></a>
+        <a class="logos__fig" href="#"><img src="./img/logos-3.png" alt="#" ></a>
+        <a class="logos__fig" href="#"><img src="./img/logos-4.png" alt="#" ></a>
     </section>
 
     <section class="other-info">
-        <div class="content">
             <article class="other-info__about-item">
                 <a href="#" class="other-info__logo">
                     <svg class="header__logo-svg" xmlns="http://www.w3.org/2000/svg"
@@ -627,16 +631,16 @@
             <article class="other-info__about-item">
                 <h1 class="other-info__header">Our Twitter</h1>
                 <section class="other-info__blog">
-                    <p class="other-info__main">Diam nonummy nibh euismod tincidunt ut laoreet dolore magna</p>
-                    <p class="other-info__date-or-time">September 08,2015</p>
+                    <span class="other-info__main"><a href="#">@waxom</a> Cum soluta nobis eleifend option congue nihil imperdiet doming</span>
+                    <p class="other-info__date-or-time">3 mins ago</p>
                 </section>
                 <section class="other-info__blog">
-                    <p class="other-info__main">Diam nonummy nibh euismod tincidunt ut laoreet dolore magna</p>
-                    <p class="other-info__date-or-time">September 08,2015</p>
+                    <span class="other-info__main">Mirum est<a href="#">#envato</a> notare quam littera gothica, quam nunc putamus parum anteposuerit litterarum</span>
+                    <p class="other-info__date-or-time">5 hours ago</p>
                 </section>
                 <section class="other-info__blog">
-                    <p class="other-info__main">Diam nonummy nibh euismod tincidunt ut laoreet dolore magna</p>
-                    <p class="other-info__date-or-time">September 08,2015</p>
+                    <span class="other-info__main">Soluta nobis option <a href="https://bit.ly/1Hniso7">bit.ly/1Hniso7</a> notare quam littera gothica, quam nunc putamus parum anteposuerit litterarum</span>
+                    <p class="other-info__date-or-time">20 days ago</p>
                 </section>
 
             </article>
@@ -644,13 +648,12 @@
             <article class="other-info__about-item">
                 <h1 class="other-info__header">Dribbble Widget</h1>
                 <figure class="other-info__widget-figure">
-                    <img src="./img/other-1.png" alt="#">
-                    <img src="./img/other-2.png" alt="#">
-                    <img src="./img/other-3.png" alt="#">
-                    <img src="./img/other-4.png" alt="#">
+                    <img src="./img/other-1.png" height="98" alt="#" class="other-info__widget-figure-img">
+                    <img src="./img/other-2.png" height="98" alt="#" class="other-info__widget-figure-img">
+                    <img src="./img/other-3.png" height="98" alt="#" class="other-info__widget-figure-img">
+                    <img src="./img/other-4.png" height="98" alt="#" class="other-info__widget-figure-img">
                 </figure>
             </article>
-        </div>
     </section>
     <footer class="footer">
         <ul class="footer__items">
