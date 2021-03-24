@@ -1,46 +1,69 @@
-//Video start code block
-/*
-var video = document.querySelector("#video"),
-button = document.querySelector(".video-presentation__btn-play");
-
-button.addEventListener("click", function() {
-    video.play()
-    video.setAttribute("controls","controls");
-}, false);
-*/
-
-const products = [
-    { title: 'Shirt', price: 150 },
-    { title: 'Socks', price: 50 },
-    { title: 'Jacket', price: 350 },
-    { title: 'Shoes', price: 250 },
-    { title: 'Socks', price: 50 },
-    { title: 'Jacket', price: 350 },
-    { title: 'Shoes', price: 250 },
-    { title: 'Socks', price: 50 },
-    { title: 'Jacket', price: 350 },
-    { title: 'Shoes', price: 250 },
-    { title: 'Jacket', price: 350 },
-    { title: 'Shoes', price: 250 },
-    { title: 'Socks', price: 50 },
-    { title: 'Jacket', price: 350 },
-    { title: 'Shoes', price: 250 },
-    { title: 'Jacket', price: 350 },
-    { title: 'Shoes', price: 250 },
-    { title: 'Socks', price: 50 },
-    { title: 'Jacket', price: 350 },
-    { title: 'Shoes', price: 250 },
-  ];
-
-  //{title,price} - используется деструктуризация
-  const renderGoodsItem = ({title,price}) => {
-    return `<div class="catalog__list-item"><h1>${title}</h1><p>${price}</p></div>`;
-  };
-  
-  const renderGoodsList = (list,querySelector) => {
-     let toRender = list.map(item=>renderGoodsItem(item)).join('');
-     console.log(toRender);
-     document.querySelector(querySelector).innerHTML = toRender;
+class Item{
+  constructor(price,discount){
+    this.price=price;
+    this.discount=discount;
   }
+  get actualPrice(){
+    return this.price - (this.discount*this.price);
+  }
+}
+class GoodsItem{
+    constructor(title,price){
+        this.title=title;
+        this.price=price;
+    }
+    render(){
+        return `<div class="catalog__list-item"><h1>${this.title}</h1><p>${this.price}</p></div>`;
+    }
+}
+class GoodsList{
+    constructor(){
+        this.goods=[];
+    }
+    fetchGoods(){
+        this.goods=[
+            {title:'Shirt', price:150},
+            {title:'Socks', price:50},
+            {title:'Jacket', price:350},
+            {title:'Shoes', price:250},
+        ]
+    }
+    render(selector) {
+        let listHtml = '';
+        this.goods.forEach(good => {
+          const goodItem = new GoodsItem(good.title, good.price);
+          listHtml += goodItem.render();
+        });
+        document.querySelector(selector).innerHTML = listHtml;
+      }
+    getSummeryPrice(){
+      let summary=0;
+      this.goods.forEach(good=>{
+        summary+=good.price;
+      });
+      return summary;
+    }
+}
 
-  renderGoodsList(products,'.catalog__list>.content');
+class BinItem extends Item{
+  constructor(item,price,discount){
+    super(price,discount)
+    this.item=item;
+  }
+}
+class Bin{
+  constructor(){
+    this.items=[];
+  }
+  push(binItem){
+    this.items.push(binItem);
+  }
+}
+
+window.onload = () =>{
+  const list = new GoodsList();
+  list.fetchGoods();
+  list.render('.catalog__list>.content');
+}
+const bin = new Bin();
+const addToBin=(item)=>bin.push(new BinItem(item));
