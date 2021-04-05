@@ -37,10 +37,11 @@
                     <a href="#" class="header__nav-item">
                         <button class="header__nav-item-bin"></button>
                     </a>
-                    <a class="header__nav-item">
-                        <form action="" class="header__nav-item-form">
-                            <input type="search" class="header__nav-item-input">
-                        </form>
+                    <a class="header__nav-item header__nav-item-form">
+                        <!-- <form action="" class="header__nav-item-form"> -->
+                            <input type="search" class="header__nav-item-input" placeholder="Search...">
+                            <button class="header__nav-item-search"></button>
+                        <!-- </form> -->
                     </a>
             </nav>
         </menu>
@@ -49,7 +50,35 @@
         <div class="catalog__list">
             <div class="content"></div>
         </div>
+
+
+        <div class="vue-app" id="vue-app">
+            <h1 class="vue-h1">Vue block</h1>
+            <nav class="header__nav-vue">
+                <input type="text" class="goods-search" v-model="searchLine"/>
+                <button class="search-button" type="button" v-on:click="clickFinder">Искать</button>
+                <button class="cart-button" type="button" v-on:click="clickBin">Корзина</button>
+              </nav>
+            <div class="catalog__list content">
+                    <div class="catalog__list-item-vue" v-for="good in filteredGoods">
+                        <h3>{{ good.product_name }}</h3>
+                        <p>{{ good.price }}</p>
+                        <button v-on:click="addToBin(good)">Add to cart</button>
+                    </div>
+            </div>
+            <div class="bin" v-show="isVisibleBin">
+                <div class="catalog__list-item-vue" v-for="it in bin">
+                    <h3>{{ it.product_name }}</h3>
+                    <p>{{ it.price }}</p>
+                    <button>Delete</button>
+                </div>
+                <p class="bin__actualPrice" v-if="getSummeryPrice() > 0">Стоимость всей корзины:{{getSummeryPrice()}}</p>
+                <p class="bin__actualPrice" v-else>Нет данных</p>
+            </div>
+        </div>
+        
     </main>
 </body>
-<script src="./js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <script src="./js/index.js"></script>
 </html>

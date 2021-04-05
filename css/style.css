@@ -164,6 +164,15 @@ body {
   color: #ebebeb;
 }
 
+.header__nav-item-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .header__nav-item-bin {
   width: 18px;
   height: 24px;
@@ -175,25 +184,38 @@ body {
   background-repeat: no-repeat;
 }
 
-.header__nav-item-input {
+.header__nav-item-search {
   width: 24px;
   height: 24px;
-  outline: none;
   background-image: url("../img/loupe.svg");
+  fill: #ffffff;
+  background-color: transparent;
+  border: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.header__nav-item-input {
+  width: 70px;
+  height: 24px;
+  outline: none;
   background-color: transparent;
   background-size: contain;
   background-repeat: no-repeat;
   fill: #ffffff;
   border: transparent;
   color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
 }
 
-.header__nav-item-input:focus {
+.header__nav-item-input:hover {
   width: 200px;
   -webkit-transition: width 1s ease-out;
   transition: width 1s ease-out;
   background-position: right;
   border: 1px solid #ffffff;
+  border-radius: 10px;
   color: #ffffff;
 }
 
@@ -1693,7 +1715,6 @@ body {
 }
 
 .catalog__list {
-  min-height: 985px;
   background-color: #fbfaf8;
 }
 
@@ -1733,6 +1754,33 @@ body {
   color: #fbfaf8;
 }
 
+.catalog__list-item-vue {
+  border: 1px solid black;
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 200px;
+  min-height: 100px;
+  padding: 10px;
+  margin: 15px auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.catalog__list-item-vue:hover {
+  background-color: #363636;
+  color: #fbfaf8;
+}
+
 .catalog__list > .content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1741,5 +1789,46 @@ body {
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.goods-search {
+  border-radius: 15px;
+}
+
+.header__nav-vue {
+  text-align: center;
+}
+
+.vue-h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.vue-app {
+  position: relative;
+}
+
+.bin {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  min-height: 300px;
+  background-color: #363636;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.bin__actualPrice {
+  color: #fbfaf8;
 }
 /*# sourceMappingURL=style.css.map */

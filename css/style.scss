@@ -145,6 +145,10 @@ body {
             text-decoration: none;
             color: #ebebeb;
 
+            &-form{
+                display: flex;
+                align-items: center;
+            }
             &-bin {
                 width: 18px;
                 height: 24px;
@@ -157,25 +161,38 @@ body {
             }
 
 
-            &-input {
+            &-search {
                 width: 24px;
                 height: 24px;
-                outline: none;
                 background-image: url("../img/loupe.svg");
+                fill: #ffffff;
+                background-color: transparent;
+                border: transparent;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            &-input {
+                width: 70px;
+                height: 24px;
+                outline: none;
+               // background-image: url("../img/loupe.svg");
                 background-color: transparent;
                 background-size: contain;
                 background-repeat: no-repeat;
                 fill: #ffffff;
                 border: transparent;
                 color: transparent;
+                border: 1px solid #ffffff;
+                border-radius: 10px;
             }
 
-            &-input:focus {
-                width: 200px;
-                transition: width 1s ease-out;
-                background-position: right;
-                border: 1px solid #ffffff;
-                color: #ffffff;
+            &-input:hover{
+                    width: 200px;
+                    transition: width 1s ease-out;
+                    background-position: right;
+                    border: 1px solid #ffffff;
+                    border-radius: 10px;
+                    color: #ffffff;
             }
         }
 
@@ -1604,7 +1621,7 @@ body {
     min-height: 120px;
 
     &__list{
-        min-height: 985px;
+        // min-height: 985px;
         background-color: #fbfaf8;
         &-item{
             border: 1px solid black;
@@ -1629,11 +1646,58 @@ body {
                 background-color: #363636;
                 color:#fbfaf8;
             }
+            &-vue{
+                border: 1px solid black;
+                border-radius: 10px;
+                box-sizing: border-box;
+                max-width: 200px;
+                min-height: 100px;
+                padding: 10px;
+                margin:15px auto;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            &-vue:hover{    
+                background-color: #363636;
+                color:#fbfaf8;
+            }
         }
         &>.content{
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
         }
+    }
+}
+
+.goods-search{
+    border-radius: 15px;
+}
+.header__nav-vue{
+    // display: flex;
+    text-align: center;
+}
+.vue-h1{
+    text-align: center;
+    margin:20px 0;
+}
+.vue-app{
+    position: relative;
+}
+.bin{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 400px;
+    min-height: 300px;
+    background-color: #363636;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__actualPrice{
+        color:#fbfaf8;
     }
 }
