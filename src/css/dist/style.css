@@ -150,7 +150,7 @@ body {
 }
 .header__nav-item-input:focus {
   width: 200px;
-  transition: width 1s ease-out;
+  /* transition: width 1s ease-out; */
   background-position: right;
   border: 1px solid #ffffff;
   color: #ffffff;

@@ -5,9 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Waxom|Catalog</title>
-    <link href="css/style.css" rel="stylesheet" type="text/css"> 
-    <!-- <link href="css/normalize.css" rel="stylesheet" type="text/css">    -->
-</head>
+<script defer src="main.7fc2c0bf04b8474848e3.bundle.js"></script></head>
 <body>
     <header class="header catalog">
         <menu class="header__menu">
@@ -43,16 +41,14 @@
                             <button class="header__nav-item-search"></button>
                         <!-- </form> -->
                     </a>
+
             </nav>
+            <!-- <h1</h1> -->
         </menu>
     </header>
     <main>
-        <div class="catalog__list">
-            <div class="content"></div>
-        </div>
-
-
-        <div class="vue-app" id="vue-app">
+        <item-component id="app"></item-component>
+        <!-- <div class="vue-app" id="vue-app">
             <h1 class="vue-h1">Vue block</h1>
             <nav class="header__nav-vue">
                 <input type="text" class="goods-search" v-model="searchLine"/>
@@ -75,10 +71,9 @@
                 <p class="bin__actualPrice" v-if="getSummeryPrice() > 0">Стоимость всей корзины:{{getSummeryPrice()}}</p>
                 <p class="bin__actualPrice" v-else>Нет данных</p>
             </div>
-        </div>
-        
+
+          <goods-list :goods="filteredGoods"/>
+        </div> -->
     </main>
 </body>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
-    <script src="./js/index.js"></script>
 </html>

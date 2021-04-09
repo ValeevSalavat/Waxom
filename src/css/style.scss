@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: "Raleway";
     font-weight: normal;
@@ -177,11 +178,11 @@ body {
                 outline: none;
                // background-image: url("../img/loupe.svg");
                 background-color: transparent;
-                background-size: contain;
+                // background-size: contain;
                 background-repeat: no-repeat;
                 fill: #ffffff;
                 border: transparent;
-                color: transparent;
+                color: #111111;
                 border: 1px solid #ffffff;
                 border-radius: 10px;
             }
@@ -1621,8 +1622,8 @@ body {
     min-height: 120px;
 
     &__list{
-        // min-height: 985px;
         background-color: #fbfaf8;
+        display: flex;
         &-item{
             border: 1px solid black;
             border-radius: 10px;
@@ -1651,7 +1652,7 @@ body {
                 border-radius: 10px;
                 box-sizing: border-box;
                 max-width: 200px;
-                min-height: 100px;
+                // min-height: 100px;
                 padding: 10px;
                 margin:15px auto;
                 text-align: center;
@@ -1664,11 +1665,6 @@ body {
                 color:#fbfaf8;
             }
         }
-        &>.content{
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
     }
 }
 
@@ -1676,7 +1672,6 @@ body {
     border-radius: 15px;
 }
 .header__nav-vue{
-    // display: flex;
     text-align: center;
 }
 .vue-h1{
@@ -1687,9 +1682,6 @@ body {
     position: relative;
 }
 .bin{
-    position: absolute;
-    top:0;
-    left:0;
     width: 400px;
     min-height: 300px;
     background-color: #363636;

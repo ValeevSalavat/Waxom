@@ -1,5 +1,8 @@
+import '../css/style.css'
 
 const API_URL = 'https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses';
+import Vue from 'vue'
+
 class Item{
   constructor(price,discount){
     this.price=price;
@@ -9,6 +12,7 @@ class Item{
     return this.price - (this.discount*this.price);
   }
 }
+//
 class GoodsItem{
     constructor(product_name,price){
         this.product_name=product_name;
@@ -60,7 +64,6 @@ class GoodsList{
       this.render('.catalog__list>.content');
     }
 }
-
 class BinItem extends Item{
   constructor(item,price,discount){
     super(price,discount)
@@ -116,7 +119,7 @@ window.onload = () =>{
 
 const bin = new Bin();
 const addToBin=(item)=>bin.push(new BinItem(item));
-
+ 
 let vueApp = new Vue({
     el:'#vue-app',
     data:{
@@ -191,3 +194,22 @@ let contains = (arr,item) =>{
   });
   return output;
 };
+
+Vue.component('goods-list', {
+  props: ['goods'],
+  template: `
+    <div class="goods-list">
+      <goods-item v-for="good in goods" :good="good"></goods-item>
+    </div>
+  `
+});
+
+Vue.component('goods-item', {
+  props: ['good'],
+  template: `
+    <div class="goods-item">
+      <h3>{{ good.product_name }}</h3>
+      <p>{{ good.price }}</p>
+    </div>
+  `
+});

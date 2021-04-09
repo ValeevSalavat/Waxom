@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waxom</title>
+<script defer src="main.7fc2c0bf04b8474848e3.bundle.js"></script></head>
+<body>
+    <section class="header">
+            <menu class="header__menu">
+                <input id="header__menu-toggle" type="checkbox">
+                <label class="header__menu-btn" for="header__menu-toggle" >
+                    <span class="header__menu-btn-pic"></span>
+                </label>
+
+                <a href="index.html" class="header__logo">
+                    <svg class="header__logo-svg" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0 0 64 56">
+                            <path d="M 52.87 55.13C 52.87 55.13 58.13 45.94 58.13 45.94 58.13 45.94 63.38 55.13 63.38 55.13 63.38 55.13 52.87 55.13 52.87 55.13ZM 46.3 45.17C 46.3 45.17 56.81 45.17 56.81 45.17 56.81 45.17 51.56 54.36 51.56 54.36 51.56 54.36 46.3 45.17 46.3 45.17ZM 51.56 34.45C 51.56 34.45 56.81 43.64 56.81 43.64 56.81 43.64 46.3 43.64 46.3 43.64 46.3 43.64 51.56 34.45 51.56 34.45ZM 39.74 33.69C 39.74 33.69 50.24 33.69 50.24 33.69 50.24 33.69 44.99 42.87 44.99 42.87 44.99 42.87 39.74 33.69 39.74 33.69ZM 44.99 22.97C 44.99 22.97 50.24 32.15 50.24 32.15 50.24 32.15 39.74 32.15 39.74 32.15 39.74 32.15 44.99 22.97 44.99 22.97ZM 33.17 22.2C 33.17 22.2 43.68 22.2 43.68 22.2 43.68 22.2 38.42 31.39 38.42 31.39 38.42 31.39 33.17 22.2 33.17 22.2ZM 38.42 11.48C 38.42 11.48 43.68 20.67 43.68 20.67 43.68 20.67 33.17 20.67 33.17 20.67 33.17 20.67 38.42 11.48 38.42 11.48ZM 26.6 10.71C 26.6 10.71 37.11 10.71 37.11 10.71 37.11 10.71 31.85 19.9 31.85 19.9 31.85 19.9 26.6 10.71 26.6 10.71ZM 31.85-0.01C 31.85-0.01 37.11 9.18 37.11 9.18 37.11 9.18 26.6 9.18 26.6 9.18 26.6 9.18 31.85-0.01 31.85-0.01ZM 20.03 20.67C 20.03 20.67 25.29 11.48 25.29 11.48 25.29 11.48 30.54 20.67 30.54 20.67 30.54 20.67 20.03 20.67 20.03 20.67ZM 13.46 32.15C 13.46 32.15 18.72 22.97 18.72 22.97 18.72 22.97 23.97 32.15 23.97 32.15 23.97 32.15 13.46 32.15 13.46 32.15ZM 6.9 43.64C 6.9 43.64 12.15 34.45 12.15 34.45 12.15 34.45 17.4 43.64 17.4 43.64 17.4 43.64 6.9 43.64 6.9 43.64ZM 0.33 55.13C 0.33 55.13 5.58 45.94 5.58 45.94 5.58 45.94 10.84 55.13 10.84 55.13 10.84 55.13 0.33 55.13 0.33 55.13ZM 17.4 45.17C 17.4 45.17 12.15 54.36 12.15 54.36 12.15 54.36 6.9 45.17 6.9 45.17 6.9 45.17 17.4 45.17 17.4 45.17ZM 23.97 33.69C 23.97 33.69 18.72 42.87 18.72 42.87 18.72 42.87 13.46 33.69 13.46 33.69 13.46 33.69 23.97 33.69 23.97 33.69ZM 30.54 22.2C 30.54 22.2 25.29 31.39 25.29 31.39 25.29 31.39 20.03 22.2 20.03 22.2 20.03 22.2 30.54 22.2 30.54 22.2ZM 37.11 55.13C 37.11 55.13 26.6 55.13 26.6 55.13 26.6 55.13 31.85 45.94 31.85 45.94 31.85 45.94 37.11 55.13 37.11 55.13ZM 43.68 45.17C 43.68 45.17 38.42 54.36 38.42 54.36 38.42 54.36 33.17 45.17 33.17 45.17 33.17 45.17 43.68 45.17 43.68 45.17ZM 50.24 55.13C 50.24 55.13 39.74 55.13 39.74 55.13 39.74 55.13 44.99 45.94 44.99 45.94 44.99 45.94 50.24 55.13 50.24 55.13Z"/>
+                    </svg>
+                    <span class="header__logo-txt">Waxom</span>
+                </a>
+                
+                <nav class="header__nav-items">
+                        <a href="#" class="header__nav-item">Home</a>
+                        <a href="#" class="header__nav-item">About us</a>
+                        <a href="#" class="header__nav-item">Portfolio</a>     
+                        <a href="#" class="header__nav-item">Blog</a>
+                        <a href="#" class="header__nav-item">Pricing</a>
+                        <a href="#" class="header__nav-item">Shortcodes</a>
+                        <a href="#" class="header__nav-item">Contact</a>
+                        <a href="./catalog.html" class="header__nav-item">Catalog</a>
+                        <a href="#" class="header__nav-item">
+                            <button class="header__nav-item-bin"></button>
+                        </a>
+                        <a class="header__nav-item">
+                            <form class="header__nav-item-form">
+                                <input type="text" class="header__nav-item-input" placeholder="Search...">
+                                <button class="header__nav-item-search" type="button"></button>
+                            </form>
+                        </a>
+                </nav>
+            </menu>
+
+            <section class="header__carusel">
+                <a href="" class="header__carusel-btn"></a>
+                <div class="header__carusel-text">
+                    <span class="header__carusel-text-1">Unique and Modern Design </span>
+                    <span class="header__carusel-text-2">Portfolio PSD Template </span>
+                    <span class="header__carusel-text-3">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</span>
+                    <a href="#" class="header__carusel-text-btn">Get started</a>
+                </div>
+                <a href="" class="header__carusel-btn"></a>
+            </section>
+            
+            <div class="header__pagination">
+                <a href="#" class="header__pagination-item"></a>
+                <a href="#" class="header__pagination-item"></a>
+                <a href="#" class="header__pagination-item"></a>
+                <a href="#" class="header__pagination-item"></a>
+                <a href="#" class="header__pagination-item"></a>
+            </div>
+    </section>
+    
+    <section class="features content">
+            <figure class="features__item">
+                <svg class="features__img" 
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="49px" height="49px">
+                    <defs>
+                    <filter id="Filter_0">
+                        <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+                        <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+                    </filter>
+
+                    </defs>
+                    <g filter="url(#Filter_0)">
+                    <path fill-rule="evenodd" 
+                    d="M47.668,19.717 L33.402,33.985 L0.534,48.463 L15.011,15.591 L29.279,1.327 C29.898,0.706 30.904,0.706 31.527,1.327 C32.148,1.950 32.148,2.955 31.527,3.576 L17.683,17.422 L9.107,36.888 L12.106,39.887 L31.573,31.314 L45.420,17.470 C46.039,16.847 47.043,16.847 47.668,17.470 C48.289,18.090 48.289,19.100 47.668,19.717 ZM29.745,28.466 C29.434,28.773 29.028,28.931 28.620,28.931 C28.211,28.931 27.805,28.773 27.495,28.466 C26.875,27.843 26.875,26.836 27.495,26.216 L40.827,12.885 C41.450,12.260 42.454,12.260 43.077,12.885 C43.700,13.505 43.700,14.510 43.077,15.134 L29.745,28.466 ZM26.265,24.985 C25.955,25.293 25.549,25.450 25.140,25.450 C24.734,25.450 24.326,25.293 24.015,24.985 C23.394,24.364 23.394,23.354 24.015,22.735 L37.348,9.403 C37.970,8.780 38.974,8.780 39.598,9.403 C40.219,10.023 40.219,11.030 39.598,11.653 L26.265,24.985 ZM22.784,21.502 C22.473,21.814 22.065,21.968 21.659,21.968 C21.253,21.968 20.845,21.814 20.534,21.502 C19.914,20.883 19.914,19.873 20.534,19.253 L33.867,5.922 C34.490,5.298 35.495,5.298 36.117,5.922 C36.739,6.542 36.739,7.548 36.117,8.172 L22.784,21.502 Z"/>
+                    </g>
+                    </svg>
+                  
+                <figcaption class="features__texts">
+                    <h1 class="features__text-head">Web & App Design</h1>
+                    <p class="features__text-p">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+                </figcaption>
+            </figure>
+            <figure class="features__item">
+                <svg class="features__img" 
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs>
+                    <filter id="Filter_0">
+                        <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+                        <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+                    </filter>
+
+                    </defs>
+                    <g filter="url(#Filter_0)">
+                    <path fill-rule="evenodd"
+                    d="M0.414,19.697 L4.399,17.548 L21.851,26.958 L39.302,17.548 L43.287,19.697 L21.851,31.253 L0.414,19.697 ZM0.414,11.666 L21.851,0.106 L43.287,11.666 L21.851,23.227 L0.414,11.666 ZM21.851,34.985 L39.302,25.573 L43.287,27.721 L21.851,39.283 L0.414,27.721 L4.399,25.573 L21.851,34.985 Z"/>
+                    </g>
+                    </svg>          
+                <figcaption class="features__texts">
+                    <h1 class="features__text-head">Development</h1>
+                    <p class="features__text-p">Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+                </figcaption>
+            </figure>
+            <figure class="features__item">
+                <svg class="features__img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs>
+                    <filter id="Filter_0">
+                        <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+                        <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+                    </filter>
+
+                    </defs>
+                    <g filter="url(#Filter_0)">
+                    <path fill-rule="evenodd"
+                    d="M43.927,21.850 C43.927,20.230 42.761,18.501 41.322,17.993 C39.882,17.483 38.487,16.235 38.081,15.251 C37.675,14.269 37.781,12.396 38.436,11.017 C39.092,9.638 38.695,7.591 37.550,6.443 C36.404,5.297 34.357,4.902 32.977,5.558 C31.597,6.214 29.727,6.322 28.746,5.915 C27.765,5.510 26.517,4.112 26.005,2.673 C25.493,1.234 23.764,0.067 22.144,0.067 C20.523,0.067 18.794,1.234 18.282,2.673 C17.770,4.112 16.522,5.509 15.541,5.915 C14.560,6.322 12.690,6.214 11.310,5.558 C9.932,4.902 7.883,5.297 6.737,6.443 C5.592,7.591 5.195,9.638 5.851,11.017 C6.507,12.397 6.611,14.266 6.204,15.250 C5.796,16.232 4.405,17.483 2.966,17.993 C1.526,18.501 0.360,20.230 0.360,21.850 C0.360,23.471 1.526,25.199 2.966,25.711 C4.405,26.223 5.798,27.474 6.206,28.454 C6.614,29.434 6.507,31.304 5.851,32.683 C5.195,34.062 5.592,36.110 6.737,37.255 C7.883,38.402 9.930,38.799 11.310,38.142 C12.690,37.486 14.560,37.381 15.541,37.789 C16.523,38.196 17.770,39.594 18.282,41.032 C18.794,42.468 20.523,43.633 22.144,43.633 C23.764,43.633 25.493,42.468 26.005,41.032 C26.517,39.594 27.763,38.196 28.744,37.786 C29.725,37.378 31.597,37.486 32.977,38.142 C34.356,38.799 36.404,38.402 37.550,37.255 C38.695,36.110 39.092,34.062 38.436,32.683 C37.781,31.304 37.673,29.433 38.079,28.453 C38.485,27.472 39.882,26.223 41.322,25.711 C42.761,25.199 43.927,23.471 43.927,21.850 ZM22.144,29.842 C17.724,29.842 14.150,26.270 14.150,21.859 C14.150,17.440 17.724,13.865 22.144,13.865 C26.554,13.865 30.128,17.440 30.128,21.859 C30.128,26.270 26.554,29.842 22.144,29.842 Z"/>
+                    </g>
+                    </svg>
+                <figcaption class="features__texts">
+                    <h1 class="features__text-head">Customization</h1>
+                    <p class="features__text-p">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+                </figcaption>
+            </figure>
+            <figure class="features__item">
+                <svg class="features__img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs>
+                    <filter id="Filter_0">
+                        <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+                        <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+                    </filter>
+
+                    </defs>
+                    <g filter="url(#Filter_0)">
+                    <path fill-rule="evenodd"
+                    d="M51.411,14.341 L41.921,33.763 C41.326,34.984 39.729,35.984 38.378,35.984 L3.080,35.984 C1.730,35.984 1.112,34.982 1.711,33.763 L11.203,14.341 C11.796,13.118 13.392,12.115 14.742,12.115 L50.040,12.115 C51.394,12.115 52.009,13.118 51.411,14.341 ZM9.000,13.245 L0.738,30.147 L0.738,7.983 C0.738,6.619 1.843,5.501 3.196,5.502 L14.012,5.502 L14.012,4.058 C14.012,3.063 14.394,2.135 15.094,1.430 C15.793,0.723 16.717,0.335 17.701,0.335 L23.991,0.335 C26.020,0.335 27.675,2.002 27.675,4.058 L27.675,5.501 L38.491,5.501 C39.842,5.501 40.949,6.619 40.949,7.983 L40.949,9.637 L14.742,9.637 C12.475,9.637 10.002,11.187 9.000,13.245 ZM16.470,5.502 L25.217,5.502 L25.217,4.058 C25.217,3.370 24.667,2.815 23.989,2.815 L17.698,2.815 C17.372,2.815 17.063,2.945 16.832,3.183 C16.602,3.417 16.470,3.730 16.470,4.058 L16.470,5.502 Z"/>
+                    </g>
+                    </svg>
+                <figcaption class="features__texts">
+                    <h1 class="features__text-head">Marketing</h1>
+                    <p class="features__text-p">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+                </figcaption>
+            </figure>
+    </section>
+
+    <section class="realized-proj">
+        <h1 class="realized-proj__header">Waxom is Realization of your Ideas.</h1>
+        <p class="realized-proj__text">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+        <div class="realized-proj__multi-photo content"></div>
+    </section>
+
+    <aside class="purchase">
+        <div class="purchase__wrapper">
+            <p class="purchase__title">
+                <span>Waxom</span>
+                Multipurpose WordPress Theme
+            </p>
+            <p class="purchase__text">Don't Forget to Rate the Template. Thanks so much!</p>
+        </div>
+        <button class="purchase__button">
+            <span class="purchase__button-text">purchase now</span>
+        </button>
+    </aside>
+
+    <section class="projects content">
+        <h1 class="projects__header">Our Latest Projects</h1>
+        <p class="projects__text">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+        <div class="projects__nav">
+            <button class="projects__nav-item">All</button>
+            <button class="projects__nav-item">Web Design</button>
+            <button class="projects__nav-item">Mobile App</button>
+            <button class="projects__nav-item">Illustration</button>
+            <button class="projects__nav-item">Photography</button>
+        </div>
+        <div class="projects__images content">
+            <figure class="projects__img">
+                <figcaption class="projects__img-text">
+                    <h1 class="projects__img-title">Claritas Etiam Processus</h1>
+                    <p class="projects__img-autor">Photography, Nature</p>
+                </figcaption>
+                <button class="projects__img-link">
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="26px" height="26px">
+                        <defs>
+                        <filter id="Filter_0">
+                            <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+                            <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+                        </filter>
+
+                        </defs>
+                        <g filter="url(#Filter_0)">
+                        <path fill-rule="evenodd"
+                        d="M23.499,11.242 L21.573,13.170 L18.386,16.359 C18.233,16.529 18.045,16.683 17.875,16.819 C16.102,18.217 13.750,18.524 11.722,17.724 C10.972,17.433 10.256,16.973 9.643,16.359 L12.284,13.715 C13.239,14.670 14.790,14.670 15.744,13.715 L17.772,11.686 L20.857,8.599 C21.812,7.644 21.812,6.091 20.857,5.137 C19.903,4.182 18.352,4.182 17.397,5.137 L14.943,7.593 C13.409,6.877 11.654,6.757 10.035,7.217 L14.756,2.494 C17.159,0.089 21.096,0.089 23.499,2.494 C25.919,4.915 25.919,8.837 23.499,11.242 ZM14.262,8.293 C15.011,8.582 15.727,9.042 16.341,9.656 L13.699,12.301 C12.745,11.345 11.194,11.345 10.239,12.301 L5.126,17.416 C4.171,18.372 4.171,19.922 5.126,20.878 C6.080,21.834 7.631,21.834 8.586,20.878 L10.938,18.524 C12.949,19.327 13.495,19.394 15.846,18.849 L11.228,23.521 C8.825,25.927 4.887,25.927 2.484,23.521 C0.081,21.117 0.081,17.178 2.484,14.774 L7.597,9.656 C7.665,9.589 7.751,9.503 7.836,9.435 C9.625,7.831 12.131,7.439 14.262,8.293 Z"/>
+                        </g>
+                        </svg>
+                </button>
+                <button class="projects__img-search">
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="26px" height="25px">
+                        <defs>
+                        <filter id="Filter_0">
+                            <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+                            <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+                        </filter>
+
+                        </defs>
+                        <g filter="url(#Filter_0)">
+                        <path fill-rule="evenodd" 
+                        d="M25.456,24.172 C25.135,24.489 24.714,24.646 24.293,24.646 C23.873,24.646 23.451,24.489 23.130,24.172 L18.795,19.901 C16.902,21.348 14.535,22.218 11.959,22.218 C5.793,22.218 0.777,17.276 0.777,11.202 C0.777,5.128 5.793,0.186 11.959,0.186 C18.125,0.186 23.141,5.128 23.141,11.202 C23.141,13.572 22.370,15.764 21.073,17.563 L25.456,21.881 C26.098,22.514 26.098,23.540 25.456,24.172 ZM11.960,2.778 C7.245,2.778 3.409,6.557 3.409,11.202 C3.409,15.847 7.245,19.626 11.960,19.627 C14.064,19.627 15.990,18.871 17.481,17.624 C17.941,17.240 18.355,16.805 18.724,16.336 C19.840,14.913 20.510,13.135 20.510,11.202 C20.510,6.557 16.674,2.778 11.960,2.778 ZM16.810,9.581 C16.625,9.668 16.429,9.711 16.234,9.711 C15.747,9.711 15.280,9.444 15.052,8.983 C14.347,7.559 12.911,6.674 11.304,6.674 C10.578,6.674 9.989,6.094 9.989,5.377 C9.989,4.663 10.578,4.082 11.304,4.082 C13.925,4.082 16.268,5.525 17.417,7.847 C17.735,8.491 17.464,9.267 16.810,9.581 Z"/>
+                        </g>
+                        </svg>
+                </button>
+            </figure>
+
+            <figure class="projects__img">
+                <figcaption class="projects__img-text">
+                    <h1 class="projects__img-title">Quam Nutamus Farum</h1>
+                    <p class="projects__img-autor">Graphic Design, Mock-Up</p>
+                </figcaption>
+                <button class="projects__img-link">
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="26px" height="26px">
+                        <defs>
+                        <filter id="Filter_0">
+                            <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+                            <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+                        </filter>
+
+                        </defs>
+                        <g filter="url(#Filter_0)">
+                        <path fill-rule="evenodd"
+                        d="M23.499,11.242 L21.573,13.170 L18.386,16.359 C18.233,16.529 18.045,16.683 17.875,16.819 C16.102,18.217 13.750,18.524 11.722,17.724 C10.972,17.433 10.256,16.973 9.643,16.359 L12.284,13.715 C13.239,14.670 14.790,14.670 15.744,13.715 L17.772,11.686 L20.857,8.599 C21.812,7.644 21.812,6.091 20.857,5.137 C19.903,4.182 18.352,4.182 17.397,5.137 L14.943,7.593 C13.409,6.877 11.654,6.757 10.035,7.217 L14.756,2.494 C17.159,0.089 21.096,0.089 23.499,2.494 C25.919,4.915 25.919,8.837 23.499,11.242 ZM14.262,8.293 C15.011,8.582 15.727,9.042 16.341,9.656 L13.699,12.301 C12.745,11.345 11.194,11.345 10.239,12.301 L5.126,17.416 C4.171,18.372 4.171,19.922 5.126,20.878 C6.080,21.834 7.631,21.834 8.586,20.878 L10.938,18.524 C12.949,19.327 13.495,19.394 15.846,18.849 L11.228,23.521 C8.825,25.927 4.887,25.927 2.484,23.521 C0.081,21.117 0.081,17.178 2.484,14.774 L7.597,9.656 C7.665,9.589 7.751,9.503 7.836,9.435 C9.625,7.831 12.131,7.439 14.262,8.293 Z"/>
+                        </g>
+                        </svg>
+                </button>
+                <button class="projects__img-search">
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="26px" height="25px">
+                        <defs>
+                        <filter id="Filter_0">
+                            <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+                            <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+                        </filter>
+
+                        </defs>
+                        <g filter="url(#Filter_0)">
+                        <path fill-rule="evenodd" 
+                        d="M25.456,24.172 C25.135,24.489 24.714,24.646 24.293,24.646 C23.873,24.646 23.451,24.489 23.130,24.172 L18.795,19.901 C16.902,21.348 14.535,22.218 11.959,22.218 C5.793,22.218 0.777,17.276 0.777,11.202 C0.777,5.128 5.793,0.186 11.959,0.186 C18.125,0.186 23.141,5.128 23.141,11.202 C23.141,13.572 22.370,15.764 21.073,17.563 L25.456,21.881 C26.098,22.514 26.098,23.540 25.456,24.172 ZM11.960,2.778 C7.245,2.778 3.409,6.557 3.409,11.202 C3.409,15.847 7.245,19.626 11.960,19.627 C14.064,19.627 15.990,18.871 17.481,17.624 C17.941,17.240 18.355,16.805 18.724,16.336 C19.840,14.913 20.510,13.135 20.510,11.202 C20.510,6.557 16.674,2.778 11.960,2.778 ZM16.810,9.581 C16.625,9.668 16.429,9.711 16.234,9.711 C15.747,9.711 15.280,9.444 15.052,8.983 C14.347,7.559 12.911,6.674 11.304,6.674 C10.578,6.674 9.989,6.094 9.989,5.377 C9.989,4.663 10.578,4.082 11.304,4.082 C13.925,4.082 16.268,5.525 17.417,7.847 C17.735,8.491 17.464,9.267 16.810,9.581 Z"/>
+                        </g>
+                        </svg>
+                </button>
+            </figure>
+
+            <figure class="projects__img">
+                <figcaption class="projects__img-text">
+                    <h1 class="projects__img-title">Usus Legentis Videntur</h1>
+                    <p class="projects__img-autor">Photography, Holiday</p>
+                </figcaption>
+                <button class="projects__img-link">
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="26px" height="26px">
+                        <defs>
+                        <filter id="Filter_0">
+                            <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+                            <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+                        </filter>
+
+                        </defs>
+                        <g filter="url(#Filter_0)">
+                        <path fill-rule="evenodd"
+                        d="M23.499,11.242 L21.573,13.170 L18.386,16.359 C18.233,16.529 18.045,16.683 17.875,16.819 C16.102,18.217 13.750,18.524 11.722,17.724 C10.972,17.433 10.256,16.973 9.643,16.359 L12.284,13.715 C13.239,14.670 14.790,14.670 15.744,13.715 L17.772,11.686 L20.857,8.599 C21.812,7.644 21.812,6.091 20.857,5.137 C19.903,4.182 18.352,4.182 17.397,5.137 L14.943,7.593 C13.409,6.877 11.654,6.757 10.035,7.217 L14.756,2.494 C17.159,0.089 21.096,0.089 23.499,2.494 C25.919,4.915 25.919,8.837 23.499,11.242 ZM14.262,8.293 C15.011,8.582 15.727,9.042 16.341,9.656 L13.699,12.301 C12.745,11.345 11.194,11.345 10.239,12.301 L5.126,17.416 C4.171,18.372 4.171,19.922 5.126,20.878 C6.080,21.834 7.631,21.834 8.586,20.878 L10.938,18.524 C12.949,19.327 13.495,19.394 15.846,18.849 L11.228,23.521 C8.825,25.927 4.887,25.927 2.484,23.521 C0.081,21.117 0.081,17.178 2.484,14.774 L7.597,9.656 C7.665,9.589 7.751,9.503 7.836,9.435 C9.625,7.831 12.131,7.439 14.262,8.293 Z"/>
+                        </g>
+                        </svg>
+                </button>
+                <button class="projects__img-search">
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="26px" height="25px">
+                        <defs>
+                        <filter id="Filter_0">
+                            <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+                            <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+                        </filter>
+
+                        </defs>
+                        <g filter="url(#Filter_0)">
+                        <path fill-rule="evenodd" 
+                        d="M25.456,24.172 C25.135,24.489 24.714,24.646 24.293,24.646 C23.873,24.646 23.451,24.489 23.130,24.172 L18.795,19.901 C16.902,21.348 14.535,22.218 11.959,22.218 C5.793,22.218 0.777,17.276 0.777,11.202 C0.777,5.128 5.793,0.186 11.959,0.186 C18.125,0.186 23.141,5.128 23.141,11.202 C23.141,13.572 22.370,15.764 21.073,17.563 L25.456,21.881 C26.098,22.514 26.098,23.540 25.456,24.172 ZM11.960,2.778 C7.245,2.778 3.409,6.557 3.409,11.202 C3.409,15.847 7.245,19.626 11.960,19.627 C14.064,19.627 15.990,18.871 17.481,17.624 C17.941,17.240 18.355,16.805 18.724,16.336 C19.840,14.913 20.510,13.135 20.510,11.202 C20.510,6.557 16.674,2.778 11.960,2.778 ZM16.810,9.581 C16.625,9.668 16.429,9.711 16.234,9.711 C15.747,9.711 15.280,9.444 15.052,8.983 C14.347,7.559 12.911,6.674 11.304,6.674 C10.578,6.674 9.989,6.094 9.989,5.377 C9.989,4.663 10.578,4.082 11.304,4.082 C13.925,4.082 16.268,5.525 17.417,7.847 C17.735,8.491 17.464,9.267 16.810,9.581 Z"/>
+                        </g>
+                        </svg>
+                </button>
+            </figure>
+
+            <figure class="projects__img">
+                <figcaption class="projects__img-text">
+                    <h1 class="projects__img-title">Claritas Etiam Processus</h1>
+                    <p class="projects__img-autor">Photography, Nature</p>
+                </figcaption>
+                <button class="projects__img-link">
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="26px" height="26px">
+                        <defs>
+                        <filter id="Filter_0">
+                            <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+                            <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+                        </filter>
+
+                        </defs>
+                        <g filter="url(#Filter_0)">
+                        <path fill-rule="evenodd"
+                        d="M23.499,11.242 L21.573,13.170 L18.386,16.359 C18.233,16.529 18.045,16.683 17.875,16.819 C16.102,18.217 13.750,18.524 11.722,17.724 C10.972,17.433 10.256,16.973 9.643,16.359 L12.284,13.715 C13.239,14.670 14.790,14.670 15.744,13.715 L17.772,11.686 L20.857,8.599 C21.812,7.644 21.812,6.091 20.857,5.137 C19.903,4.182 18.352,4.182 17.397,5.137 L14.943,7.593 C13.409,6.877 11.654,6.757 10.035,7.217 L14.756,2.494 C17.159,0.089 21.096,0.089 23.499,2.494 C25.919,4.915 25.919,8.837 23.499,11.242 ZM14.262,8.293 C15.011,8.582 15.727,9.042 16.341,9.656 L13.699,12.301 C12.745,11.345 11.194,11.345 10.239,12.301 L5.126,17.416 C4.171,18.372 4.171,19.922 5.126,20.878 C6.080,21.834 7.631,21.834 8.586,20.878 L10.938,18.524 C12.949,19.327 13.495,19.394 15.846,18.849 L11.228,23.521 C8.825,25.927 4.887,25.927 2.484,23.521 C0.081,21.117 0.081,17.178 2.484,14.774 L7.597,9.656 C7.665,9.589 7.751,9.503 7.836,9.435 C9.625,7.831 12.131,7.439 14.262,8.293 Z"/>
+                        </g>
+                        </svg>
+                </button>
+                <button class="projects__img-search">
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="26px" height="25px">
+                        <defs>
+                        <filter id="Filter_0">
+                            <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+                            <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+                        </filter>
+
+                        </defs>
+                        <g filter="url(#Filter_0)">
+                        <path fill-rule="evenodd" 
+                        d="M25.456,24.172 C25.135,24.489 24.714,24.646 24.293,24.646 C23.873,24.646 23.451,24.489 23.130,24.172 L18.795,19.901 C16.902,21.348 14.535,22.218 11.959,22.218 C5.793,22.218 0.777,17.276 0.777,11.202 C0.777,5.128 5.793,0.186 11.959,0.186 C18.125,0.186 23.141,5.128 23.141,11.202 C23.141,13.572 22.370,15.764 21.073,17.563 L25.456,21.881 C26.098,22.514 26.098,23.540 25.456,24.172 ZM11.960,2.778 C7.245,2.778 3.409,6.557 3.409,11.202 C3.409,15.847 7.245,19.626 11.960,19.627 C14.064,19.627 15.990,18.871 17.481,17.624 C17.941,17.240 18.355,16.805 18.724,16.336 C19.840,14.913 20.510,13.135 20.510,11.202 C20.510,6.557 16.674,2.778 11.960,2.778 ZM16.810,9.581 C16.625,9.668 16.429,9.711 16.234,9.711 C15.747,9.711 15.280,9.444 15.052,8.983 C14.347,7.559 12.911,6.674 11.304,6.674 C10.578,6.674 9.989,6.094 9.989,5.377 C9.989,4.663 10.578,4.082 11.304,4.082 C13.925,4.082 16.268,5.525 17.417,7.847 C17.735,8.491 17.464,9.267 16.810,9.581 Z"/>
+                        </g>
+                        </svg>
+                </button>
+            </figure>
+
+            <figure class="projects__img">
+                <figcaption class="projects__img-text">
+                    <h1 class="projects__img-title">Quam Nutamus Farum</h1>
+                    <p class="projects__img-autor">Graphic Design, Mock-Up</p>
+                </figcaption>
+                <button class="projects__img-link">
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="26px" height="26px">
+                        <defs>
+                        <filter id="Filter_0">
+                            <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+                            <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+                        </filter>
+
+                        </defs>
+                        <g filter="url(#Filter_0)">
+                        <path fill-rule="evenodd"
+                        d="M23.499,11.242 L21.573,13.170 L18.386,16.359 C18.233,16.529 18.045,16.683 17.875,16.819 C16.102,18.217 13.750,18.524 11.722,17.724 C10.972,17.433 10.256,16.973 9.643,16.359 L12.284,13.715 C13.239,14.670 14.790,14.670 15.744,13.715 L17.772,11.686 L20.857,8.599 C21.812,7.644 21.812,6.091 20.857,5.137 C19.903,4.182 18.352,4.182 17.397,5.137 L14.943,7.593 C13.409,6.877 11.654,6.757 10.035,7.217 L14.756,2.494 C17.159,0.089 21.096,0.089 23.499,2.494 C25.919,4.915 25.919,8.837 23.499,11.242 ZM14.262,8.293 C15.011,8.582 15.727,9.042 16.341,9.656 L13.699,12.301 C12.745,11.345 11.194,11.345 10.239,12.301 L5.126,17.416 C4.171,18.372 4.171,19.922 5.126,20.878 C6.080,21.834 7.631,21.834 8.586,20.878 L10.938,18.524 C12.949,19.327 13.495,19.394 15.846,18.849 L11.228,23.521 C8.825,25.927 4.887,25.927 2.484,23.521 C0.081,21.117 0.081,17.178 2.484,14.774 L7.597,9.656 C7.665,9.589 7.751,9.503 7.836,9.435 C9.625,7.831 12.131,7.439 14.262,8.293 Z"/>
+                        </g>
+                        </svg>
+                </button>
+                <button class="projects__img-search">
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="26px" height="25px">
+                        <defs>
+                        <filter id="Filter_0">
+                            <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+                            <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+                        </filter>
+
+                        </defs>
+                        <g filter="url(#Filter_0)">
+                        <path fill-rule="evenodd" 
+                        d="M25.456,24.172 C25.135,24.489 24.714,24.646 24.293,24.646 C23.873,24.646 23.451,24.489 23.130,24.172 L18.795,19.901 C16.902,21.348 14.535,22.218 11.959,22.218 C5.793,22.218 0.777,17.276 0.777,11.202 C0.777,5.128 5.793,0.186 11.959,0.186 C18.125,0.186 23.141,5.128 23.141,11.202 C23.141,13.572 22.370,15.764 21.073,17.563 L25.456,21.881 C26.098,22.514 26.098,23.540 25.456,24.172 ZM11.960,2.778 C7.245,2.778 3.409,6.557 3.409,11.202 C3.409,15.847 7.245,19.626 11.960,19.627 C14.064,19.627 15.990,18.871 17.481,17.624 C17.941,17.240 18.355,16.805 18.724,16.336 C19.840,14.913 20.510,13.135 20.510,11.202 C20.510,6.557 16.674,2.778 11.960,2.778 ZM16.810,9.581 C16.625,9.668 16.429,9.711 16.234,9.711 C15.747,9.711 15.280,9.444 15.052,8.983 C14.347,7.559 12.911,6.674 11.304,6.674 C10.578,6.674 9.989,6.094 9.989,5.377 C9.989,4.663 10.578,4.082 11.304,4.082 C13.925,4.082 16.268,5.525 17.417,7.847 C17.735,8.491 17.464,9.267 16.810,9.581 Z"/>
+                        </g>
+                        </svg>
+                </button>
+            </figure>
+
+            <figure class="projects__img">
+                <figcaption class="projects__img-text">
+                    <h1 class="projects__img-title">Usus Legentis Videntur</h1>
+                    <p class="projects__img-autor">Photography, Holiday</p>
+                </figcaption>
+                <button class="projects__img-link">
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="26px" height="26px">
+                        <defs>
+                        <filter id="Filter_0">
+                            <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+                            <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+                        </filter>
+
+                        </defs>
+                        <g filter="url(#Filter_0)">
+                        <path fill-rule="evenodd"
+                        d="M23.499,11.242 L21.573,13.170 L18.386,16.359 C18.233,16.529 18.045,16.683 17.875,16.819 C16.102,18.217 13.750,18.524 11.722,17.724 C10.972,17.433 10.256,16.973 9.643,16.359 L12.284,13.715 C13.239,14.670 14.790,14.670 15.744,13.715 L17.772,11.686 L20.857,8.599 C21.812,7.644 21.812,6.091 20.857,5.137 C19.903,4.182 18.352,4.182 17.397,5.137 L14.943,7.593 C13.409,6.877 11.654,6.757 10.035,7.217 L14.756,2.494 C17.159,0.089 21.096,0.089 23.499,2.494 C25.919,4.915 25.919,8.837 23.499,11.242 ZM14.262,8.293 C15.011,8.582 15.727,9.042 16.341,9.656 L13.699,12.301 C12.745,11.345 11.194,11.345 10.239,12.301 L5.126,17.416 C4.171,18.372 4.171,19.922 5.126,20.878 C6.080,21.834 7.631,21.834 8.586,20.878 L10.938,18.524 C12.949,19.327 13.495,19.394 15.846,18.849 L11.228,23.521 C8.825,25.927 4.887,25.927 2.484,23.521 C0.081,21.117 0.081,17.178 2.484,14.774 L7.597,9.656 C7.665,9.589 7.751,9.503 7.836,9.435 C9.625,7.831 12.131,7.439 14.262,8.293 Z"/>
+                        </g>
+                        </svg>
+                </button>
+                <button class="projects__img-search">
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="26px" height="25px">
+                        <defs>
+                        <filter id="Filter_0">
+                            <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+                            <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+                        </filter>
+
+                        </defs>
+                        <g filter="url(#Filter_0)">
+                        <path fill-rule="evenodd" 
+                        d="M25.456,24.172 C25.135,24.489 24.714,24.646 24.293,24.646 C23.873,24.646 23.451,24.489 23.130,24.172 L18.795,19.901 C16.902,21.348 14.535,22.218 11.959,22.218 C5.793,22.218 0.777,17.276 0.777,11.202 C0.777,5.128 5.793,0.186 11.959,0.186 C18.125,0.186 23.141,5.128 23.141,11.202 C23.141,13.572 22.370,15.764 21.073,17.563 L25.456,21.881 C26.098,22.514 26.098,23.540 25.456,24.172 ZM11.960,2.778 C7.245,2.778 3.409,6.557 3.409,11.202 C3.409,15.847 7.245,19.626 11.960,19.627 C14.064,19.627 15.990,18.871 17.481,17.624 C17.941,17.240 18.355,16.805 18.724,16.336 C19.840,14.913 20.510,13.135 20.510,11.202 C20.510,6.557 16.674,2.778 11.960,2.778 ZM16.810,9.581 C16.625,9.668 16.429,9.711 16.234,9.711 C15.747,9.711 15.280,9.444 15.052,8.983 C14.347,7.559 12.911,6.674 11.304,6.674 C10.578,6.674 9.989,6.094 9.989,5.377 C9.989,4.663 10.578,4.082 11.304,4.082 C13.925,4.082 16.268,5.525 17.417,7.847 C17.735,8.491 17.464,9.267 16.810,9.581 Z"/>
+                        </g>
+                        </svg>
+                </button>
+            </figure>
+        </div>
+        <button class="projects__button">load more</button>
+    </section>
+
+    <section class="video-presentation">
+        <video id = "video"
+               class="video-presentation__video"     
+               height="700"
+               muted
+               src='./video/Empty Spanish Historical Center.mp4'
+               poster="./img/video-frame.png"></video>
+         
+        <div class="video-presentation__content">
+            <button class="video-presentation__btn-play"> 
+               <svg class="video-presentation__btn-play-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="70" height="70">
+             <path d="M31.253,18.653 L48.967,33.415 C49.437,33.807 49.709,34.386 49.709,34.997 C49.709,35.609 49.437,36.188 48.967,36.580 L31.253,51.343 C30.876,51.657 30.407,51.820 29.934,51.820 C29.638,51.820 29.339,51.755 29.060,51.626 C28.337,51.287 27.874,50.559 27.874,49.760 L27.874,20.235 C27.874,19.436 28.337,18.708 29.060,18.370 C29.783,18.030 30.640,18.141 31.253,18.653 ZM31.994,45.362 L44.431,34.997 L31.994,24.633 L31.994,45.362 ZM59.759,59.759 C53.033,66.484 44.026,69.998 34.937,69.998 C29.072,69.999 23.173,68.536 17.831,65.528 C16.839,64.970 16.488,63.713 17.046,62.722 C17.604,61.731 18.860,61.379 19.852,61.938 C31.870,68.703 47.082,66.611 56.845,56.845 C68.892,44.798 68.892,25.197 56.845,13.150 C44.798,1.101 25.196,1.102 13.150,13.150 C1.104,25.197 1.104,44.798 13.150,56.845 C13.955,57.650 13.955,58.954 13.150,59.759 C12.347,60.563 11.042,60.563 10.237,59.759 C-3.416,46.105 -3.416,23.890 10.237,10.236 C23.891,-3.416 46.104,-3.417 59.759,10.236 C73.412,23.890 73.412,46.105 59.759,59.759 Z"/>
+           </svg></button>
+            <h1 class="video-presentation__header">Waxom Vide Presentation</h1>
+            <p class="video-presentation__text">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur mutationem consuetudium.</p>
+            <time class="video-presentation__time">03:26</time>
+        </div>
+    </section>
+    <section class="mobile-dev content">
+        <img src="./img/mobile.png" alt="#" height="616" class="mobile-dev__img">
+        <article class="mobile-dev__content">
+            <h1 class="mobile-dev__header">Excellent for Mobile Devices.</h1>
+            <p class="mobile-dev__text">Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius claritas. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+            <img src="./img/mobile.png" alt="#" height="308" class="mobile-dev__img-mobile-site">
+            <ul class="mobile-dev__items">
+                <li class="mobile-dev__item">Nam liber tempor cum soluta nobis eleifend option;</li>
+                <li class="mobile-dev__item">Option congue nihil imperdiet doming id quod mazim placerat facer;</li>
+                <li class="mobile-dev__item">Eodem modo typi, qui nunc nobis videntur parum futurum;</li>
+                <li class="mobile-dev__item">Investigationes demonstraverunt lectores</li>
+            </ul>
+        </article>
+    </section>
+
+    <section class="statistics">
+        <figure class="statistics__item">
+            <img src="./img/stat-icon1.svg" alt="#" class="statistics__item-img">
+            <figcaption class="statistics__item-noimgcontect">
+                <h1 class="statistics__item-header">3587</h1>
+                <p class="statistics__item-text">Satisfied clients</p>
+            </figcaption>
+        </figure>
+        <figure class="statistics__item">
+            <img src="./img/stat-icon2.svg" alt="#" class="statistics__item-img">
+            <figcaption class="statistics__item-noimgcontect">
+                <h1 class="statistics__item-header">207</h1>
+                <p class="statistics__item-text">cups of cofee</p>
+            </figcaption>
+        </figure>
+        <figure class="statistics__item">
+            <img src="./img/stat-icon3.svg" alt="#" class="statistics__item-img">
+            <figcaption class="statistics__item-noimgcontect">
+                <h1 class="statistics__item-header">2500</h1>
+                <p class="statistics__item-text">blog posts</p>
+            </figcaption>
+        </figure>
+        <figure class="statistics__item">
+            <img src="./img/stat-icon4.svg" alt="#" class="statistics__item-img">
+            <figcaption class="statistics__item-noimgcontect">
+                <h1 class="statistics__item-header">873</h1>
+                <p class="statistics__item-text">likes</p>
+            </figcaption>
+        </figure>
+        <figure class="statistics__item">
+            <img src="./img/stat-icon5.svg" alt="#" class="statistics__item-img">
+            <figcaption class="statistics__item-noimgcontect">
+                <h1 class="statistics__item-header">900</h1>
+                <p class="statistics__item-text">we lauched</p>
+            </figcaption>
+        </figure>
+    </section>
+
+    <section class="recentpost content">
+        <h1 class="recentpost__header">Recent Posts.</h1>
+        <p class="recentpost__text">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+
+        <div class="recentpost__cards">
+            <figure class="recentpost__cards-item">
+                <div class="recentpost__cards-calendar">
+                    <div class="recentpost__cards-date">30</div>
+                    <div class="recentpost__cards-month">Sep.</div>
+                </div>
+                <div class="recentpost__pagination">
+                    <a href="#" class="recentpost__pagination-item"></a>
+                    <a href="#" class="recentpost__pagination-item"></a>
+                    <a href="#" class="recentpost__pagination-item"></a>
+                    <a href="#" class="recentpost__pagination-item"></a>
+                    <a href="#" class="recentpost__pagination-item"></a>
+                </div>
+
+                <figcaption class="recentpost__content-txt">
+                    <h1 class="recentpost__content-txt-header">Lorem ipsum dolor sit amet</h1>
+                    <p class="recentpost__content-txt-text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                    <a href="#" class="recentpost__content-txt-ref">Read more</a>
+                </figcaption>
+            </figure>
+
+            <figure class="recentpost__cards-item">
+                <div class="recentpost__cards-calendar">
+                    <div class="recentpost__cards-date">30</div>
+                    <div class="recentpost__cards-month">Sep.</div>
+                </div>
+                <div class="recentpost__pagination">
+                    <a href="#" class="recentpost__pagination-item"></a>
+                    <a href="#" class="recentpost__pagination-item"></a>
+                    <a href="#" class="recentpost__pagination-item"></a>
+                    <a href="#" class="recentpost__pagination-item"></a>
+                    <a href="#" class="recentpost__pagination-item"></a>
+                </div>
+
+                <figcaption class="recentpost__content-txt">
+                    <h1 class="recentpost__content-txt-header">Lorem ipsum dolor sit amet</h1>
+                    <p class="recentpost__content-txt-text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                    <a href="#" class="recentpost__content-txt-ref">Read more</a>
+                </figcaption>
+            </figure>
+
+            <figure class="recentpost__cards-item">
+                <div class="recentpost__cards-calendar">
+                    <div class="recentpost__cards-date">30</div>
+                    <div class="recentpost__cards-month">Sep.</div>
+                </div>
+                <div class="recentpost__pagination">
+                    <a href="#" class="recentpost__pagination-item"></a>
+                    <a href="#" class="recentpost__pagination-item"></a>
+                    <a href="#" class="recentpost__pagination-item"></a>
+                    <a href="#" class="recentpost__pagination-item"></a>
+                    <a href="#" class="recentpost__pagination-item"></a>
+                </div>
+
+                <figcaption class="recentpost__content-txt">
+                    <h1 class="recentpost__content-txt-header">Lorem ipsum dolor sit amet</h1>
+                    <p class="recentpost__content-txt-text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                    <a href="#" class="recentpost__content-txt-ref">Read more</a>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="recentpost__selectors">
+            <a href="#" class="recentpost__selectors-item"></a>
+            <a href="#" class="recentpost__selectors-item"></a>
+        </div>
+    </section>
+
+    <section class="logos">
+        <a class="logos__fig" href="#">
+            <img src="./img/logos-1.png" alt="#" >
+        </a>
+        <a class="logos__fig" href="#"><img src="./img/logos-2.png" alt="#" ></a>
+        <a class="logos__fig" href="#"><img src="./img/logos-3.png" alt="#" ></a>
+        <a class="logos__fig" href="#"><img src="./img/logos-4.png" alt="#" ></a>
+    </section>
+
+    <section class="other-info">
+            <article class="other-info__about-item">
+                <a href="#" class="other-info__logo">
+                    <svg class="header__logo-svg" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="64px" height="56px" viewBox="0 0 64 56">
+                        <path d="M 52.87 55.13C 52.87 55.13 58.13 45.94 58.13 45.94 58.13 45.94 63.38 55.13 63.38 55.13 63.38 55.13 52.87 55.13 52.87 55.13ZM 46.3 45.17C 46.3 45.17 56.81 45.17 56.81 45.17 56.81 45.17 51.56 54.36 51.56 54.36 51.56 54.36 46.3 45.17 46.3 45.17ZM 51.56 34.45C 51.56 34.45 56.81 43.64 56.81 43.64 56.81 43.64 46.3 43.64 46.3 43.64 46.3 43.64 51.56 34.45 51.56 34.45ZM 39.74 33.69C 39.74 33.69 50.24 33.69 50.24 33.69 50.24 33.69 44.99 42.87 44.99 42.87 44.99 42.87 39.74 33.69 39.74 33.69ZM 44.99 22.97C 44.99 22.97 50.24 32.15 50.24 32.15 50.24 32.15 39.74 32.15 39.74 32.15 39.74 32.15 44.99 22.97 44.99 22.97ZM 33.17 22.2C 33.17 22.2 43.68 22.2 43.68 22.2 43.68 22.2 38.42 31.39 38.42 31.39 38.42 31.39 33.17 22.2 33.17 22.2ZM 38.42 11.48C 38.42 11.48 43.68 20.67 43.68 20.67 43.68 20.67 33.17 20.67 33.17 20.67 33.17 20.67 38.42 11.48 38.42 11.48ZM 26.6 10.71C 26.6 10.71 37.11 10.71 37.11 10.71 37.11 10.71 31.85 19.9 31.85 19.9 31.85 19.9 26.6 10.71 26.6 10.71ZM 31.85-0.01C 31.85-0.01 37.11 9.18 37.11 9.18 37.11 9.18 26.6 9.18 26.6 9.18 26.6 9.18 31.85-0.01 31.85-0.01ZM 20.03 20.67C 20.03 20.67 25.29 11.48 25.29 11.48 25.29 11.48 30.54 20.67 30.54 20.67 30.54 20.67 20.03 20.67 20.03 20.67ZM 13.46 32.15C 13.46 32.15 18.72 22.97 18.72 22.97 18.72 22.97 23.97 32.15 23.97 32.15 23.97 32.15 13.46 32.15 13.46 32.15ZM 6.9 43.64C 6.9 43.64 12.15 34.45 12.15 34.45 12.15 34.45 17.4 43.64 17.4 43.64 17.4 43.64 6.9 43.64 6.9 43.64ZM 0.33 55.13C 0.33 55.13 5.58 45.94 5.58 45.94 5.58 45.94 10.84 55.13 10.84 55.13 10.84 55.13 0.33 55.13 0.33 55.13ZM 17.4 45.17C 17.4 45.17 12.15 54.36 12.15 54.36 12.15 54.36 6.9 45.17 6.9 45.17 6.9 45.17 17.4 45.17 17.4 45.17ZM 23.97 33.69C 23.97 33.69 18.72 42.87 18.72 42.87 18.72 42.87 13.46 33.69 13.46 33.69 13.46 33.69 23.97 33.69 23.97 33.69ZM 30.54 22.2C 30.54 22.2 25.29 31.39 25.29 31.39 25.29 31.39 20.03 22.2 20.03 22.2 20.03 22.2 30.54 22.2 30.54 22.2ZM 37.11 55.13C 37.11 55.13 26.6 55.13 26.6 55.13 26.6 55.13 31.85 45.94 31.85 45.94 31.85 45.94 37.11 55.13 37.11 55.13ZM 43.68 45.17C 43.68 45.17 38.42 54.36 38.42 54.36 38.42 54.36 33.17 45.17 33.17 45.17 33.17 45.17 43.68 45.17 43.68 45.17ZM 50.24 55.13C 50.24 55.13 39.74 55.13 39.74 55.13 39.74 55.13 44.99 45.94 44.99 45.94 44.99 45.94 50.24 55.13 50.24 55.13Z"/>
+                    </svg>
+                    <span class="header__logo-txt">Waxom</span>
+                </a>
+                <p class="other-info__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci suscipit lobortis claritatem.</p>
+                <a href="#" class="other-info__ref">Read more</a>
+            </article>
+
+            <article class="other-info__about-item">
+                <h1 class="other-info__header">Recent Posts</h1>
+                <section class="other-info__blog">
+                    <p class="other-info__date-or-time">September 08,2015</p>
+                    <p class="other-info__main">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+                </section>
+                <section class="other-info__blog">
+                    <p class="other-info__date-or-time">September 08,2015</p>
+                    <p class="other-info__main">Diam nonummy nibh euismod tincidunt ut laoreet dolore magna</p>
+                </section>
+                <section class="other-info__blog">
+                    <p class="other-info__date-or-time">September 08,2015</p>
+                    <p class="other-info__main">Claritas est etiam processus dynamicus, qui sequitur mutationem per seacula quarta decima</p>
+                </section>
+            </article>
+
+            <article class="other-info__about-item">
+                <h1 class="other-info__header">Our Twitter</h1>
+                <section class="other-info__blog">
+                    <span class="other-info__main"><a href="#">@waxom</a> Cum soluta nobis eleifend option congue nihil imperdiet doming</span>
+                    <p class="other-info__date-or-time">3 mins ago</p>
+                </section>
+                <section class="other-info__blog">
+                    <span class="other-info__main">Mirum est<a href="#">#envato</a> notare quam littera gothica, quam nunc putamus parum anteposuerit litterarum</span>
+                    <p class="other-info__date-or-time">5 hours ago</p>
+                </section>
+                <section class="other-info__blog">
+                    <span class="other-info__main">Soluta nobis option <a href="https://bit.ly/1Hniso7">bit.ly/1Hniso7</a> notare quam littera gothica, quam nunc putamus parum anteposuerit litterarum</span>
+                    <p class="other-info__date-or-time">20 days ago</p>
+                </section>
+
+            </article>
+
+            <article class="other-info__about-item">
+                <h1 class="other-info__header">Dribbble Widget</h1>
+                <figure class="other-info__widget-figure">
+                    <img src="./img/other-1.png" height="98" alt="#" class="other-info__widget-figure-img">
+                    <img src="./img/other-2.png" height="98" alt="#" class="other-info__widget-figure-img">
+                    <img src="./img/other-3.png" height="98" alt="#" class="other-info__widget-figure-img">
+                    <img src="./img/other-4.png" height="98" alt="#" class="other-info__widget-figure-img">
+                </figure>
+            </article>
+    </section>
+    <footer class="footer">
+        <ul class="footer__items">
+            <li class="footer__item">
+                <span>Copyright © 2015</span>
+                <a href="#" class="footer__site-ref">Waxom</a>
+            </li>
+            <li class="footer__item">
+                <a href="#" class="footer__privacy">Privacy Policy</a>
+            </li>
+            <li class="footer__item">
+                <a href="#" class="footer__faq">faq</a>
+            </li>
+            <li class="footer__item">
+                <a href="#" class="footer__support">Support</a>
+            </li>
+        </ul>
+        <ul class="footer__items">
+            <li class="footer__item">
+                <span>Designed by</span>
+                <a href="#" class="footer__company">ThemeFire</a>
+            </li>
+            <li class="footer__item">
+                <span>Only on</span>
+                <a href="#" class="footer__autor">Envato Market</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

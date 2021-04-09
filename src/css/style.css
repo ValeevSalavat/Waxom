@@ -200,11 +200,10 @@ body {
   height: 24px;
   outline: none;
   background-color: transparent;
-  background-size: contain;
   background-repeat: no-repeat;
   fill: #ffffff;
   border: transparent;
-  color: transparent;
+  color: #111111;
   border: 1px solid #ffffff;
   border-radius: 10px;
 }
@@ -1716,6 +1715,9 @@ body {
 
 .catalog__list {
   background-color: #fbfaf8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .catalog__list-item {
@@ -1760,7 +1762,6 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   max-width: 200px;
-  min-height: 100px;
   padding: 10px;
   margin: 15px auto;
   text-align: center;
@@ -1781,16 +1782,6 @@ body {
   color: #fbfaf8;
 }
 
-.catalog__list > .content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
 .goods-search {
   border-radius: 15px;
 }
@@ -1809,9 +1800,6 @@ body {
 }
 
 .bin {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 400px;
   min-height: 300px;
   background-color: #363636;
