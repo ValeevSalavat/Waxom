@@ -2,7 +2,7 @@
   <div class="catalog__list-item-vue">
       <h3>{{ item.product_name }}</h3>
       <p>{{ item.price }}</p>
-      <button v-on:click="$emit('AddToBin',item)">Add to cart</button>         
+      <button v-on:click="$emit('AddToBin',item)">Add to cart</button>
   </div>
 </template>
  
@@ -13,11 +13,14 @@
        type:Object,
        required:true
      }
+   },
+   mounted(){
+      console.log(this.item);
    }
  }
  </script>
 
- <style>
+ <style lang='scss'>
     button{
       padding: 10px;
       background-color:#555555;

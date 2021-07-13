@@ -1,9 +1,9 @@
 <template>
   <div class="bin content" v-show="isVisibleBin">
-                <div class="catalog__list-item-vue" v-for="it in bin">
+                <div class="catalog__list-item-vue" v-bind:key="it" v-for="it in bin">
                     <h3>{{ it.product_name }}</h3>
                     <p>{{ it.price }}</p>
-                    <button>Delete</button>
+                    <button v-on:click="$emit('deleteFromBin',it)">Delete</button>
                 </div>
                 <p class="bin__actualPrice" v-if="getSummeryPrice() > 0">Стоимость всей корзины:{{getSummeryPrice()}}</p>
                 <p class="bin__actualPrice" v-else>Нет данных</p>
@@ -28,13 +28,16 @@
                total+=item.price;
            });
         return total;
-       }
-   },
-   computed:{
-
+       },
+      clickBin(){
+        
+      }
    }
  }
  </script>
 
- <style>
+ <style lang="scss">
+    .bin{
+        text-align: center;
+    }
  </style>

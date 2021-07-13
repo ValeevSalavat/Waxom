@@ -1,67 +1,57 @@
-
 @font-face {
     font-family: "Raleway";
     font-weight: normal;
     font-style: normal;
     src: url('../fonts/raleway/Raleway-Thin.ttf');
 }
-
 @font-face {
     font-family: "Raleway-medium";
     font-weight: normal;
     font-style: normal;
     src: url('../fonts/raleway/Raleway-Medium.ttf');
 }
-
 @font-face {
     font-family: "Raleway-extraBold";
     font-weight: normal;
     font-style: normal;
     src: url('../fonts/raleway/Raleway-ExtraBold.ttf');
 }
-
 @font-face {
     font-family: "Raleway-semiBold";
     font-weight: normal;
     font-style: normal;
     src: url('../fonts/raleway/Raleway-SemiBold.ttf');
 }
-
 @font-face {
     font-family: "Raleway-bold";
     font-weight: normal;
     font-style: normal;
     src: url('../fonts/raleway/Raleway-Bold.ttf');
 }
-
 @font-face {
     font-family: "Montserrat-regular";
     font-weight: normal;
     font-style: normal;
     src: url('../fonts/montserrat/Montserrat-Regular.ttf');
 }
-
 @font-face {
     font-family: "Montserrat-light";
     font-weight: normal;
     font-style: normal;
     src: url('../fonts/montserrat/Montserrat-Light.ttf');
 }
-
 @font-face {
     font-family: "Montserrat-extraLlight";
     font-weight: normal;
     font-style: normal;
     src: url('../fonts/montserrat/Montserrat-ExtraLight.ttf');
 }
-
 body {
     margin: 0;
     padding: 0;
     font-family: "Raleway";
     position: relative;
 }
-
 .content {
     margin: 0 auto;
     max-width: 1170px;
@@ -71,6 +61,11 @@ body {
 ::before,
 ::after,
 :active {
+    // transition: .1s;
+}
+span,
+a,
+figure{
     transition: .3s;
 }
 
@@ -571,14 +566,12 @@ body {
         background-position: top;
         box-sizing: border-box;
         position: relative;
-
         &-text {
             margin: 237px 0 0 0;
             padding: 30px 0 27px 30px;
             background-color: #fbfaf8;
             position: relative;
         }
-
         &-text:before {
             content: "";
             border: 15px solid transparent;
@@ -588,7 +581,6 @@ body {
             left: 20px;
 
         }
-
         &-title {
             margin: 0 auto;
             font-family: "Raleway-medium";
@@ -597,7 +589,6 @@ body {
             line-height: 1.2;
             font-weight: 400;
         }
-
         &-autor {
             margin: 14px auto 0 auto;
             font-family: "Montserrat-light";
@@ -606,31 +597,24 @@ body {
             color: rgb(209, 209, 209);
             line-height: 1.429;
         }
-
         &:nth-of-type(1) {
             background-image: url('../img/projects-1.png');
         }
-
         &:nth-of-type(2) {
             background-image: url('../img/projects-2.png');
         }
-
         &:nth-of-type(3) {
             background-image: url('../img/projects-3.png');
         }
-
         &:nth-of-type(4) {
             background-image: url('../img/projects-4.png');
         }
-
         &:nth-of-type(5) {
             background-image: url('../img/projects-5.png');
         }
-
         &:nth-of-type(6) {
             background-image: url('../img/projects-6.png');
         }
-
         &:nth-child(4),
         &:nth-child(5),
         &:nth-child(6) {
@@ -639,28 +623,23 @@ body {
     }
 
     &__img:hover {
+
         .projects__img-text {
             background-color: #362f2d;
         }
-
         .projects__img-text:before {
             border-bottom: 10px solid #362f2d;
         }
-
         .projects__img-title {
             color: #c9c8c7;
         }
-
         .projects__img-autor {
             color: #776a5d;
         }
-
-
         .projects__img-link,
         .projects__img-search {
             display: inline-block;
         }
-
     }
 
 

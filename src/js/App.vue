@@ -10,7 +10,8 @@
             v-on:AddToBin="addToBin"
         />
         <BinContainer
-            v-bind:bin="bin"/>
+            v-bind:bin="bin"
+            v-on:deleteFromBin="deleteFromBin"/>
     </div>
 </template>
 
@@ -82,21 +83,24 @@ export default {
             });
             return output;
          };
-       //console.log(this.bin);
         if(contains(this.bin,el)){
           alert(`Товар ${el.product_name} уже в корзине`)
         }
         else this.bin.push(el);
+      },
+      deleteFromBin(el){
+        this.bin = this.bin.filter(item=>{
+          return item!=el
+        })
       }
     }, 
     mounted(){
         this.fetchGoods();
-        console.log(this.API);
     }
 }
 </script>
 
-<style lang="css">
+<style lang="scss">
     h1{
         text-align: center;
     }

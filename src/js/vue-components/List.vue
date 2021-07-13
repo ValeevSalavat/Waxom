@@ -2,6 +2,7 @@
   <div class="catalog__list content">
       <Item 
         v-bind:item="item"
+        v-bind:key="item.id_product"
         v-for="item of filteredGoods"
         v-on:AddToBin="$emit('AddToBin',item)"
       />
@@ -19,7 +20,7 @@ export default {
       addToBin(){
         this.$emit('AddToBin',item)
       }
-    }    
+    }
 }
 </script>
 

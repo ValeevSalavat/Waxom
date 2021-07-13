@@ -1,10 +1,10 @@
-import '../css/style.css'
+import '../style/style.scss'
 import Vue from 'vue'
 import App from './App.vue'
 
 Vue.config.productionTip=false;
 
-console.log(Vue);
+// console.log(Vue);
 new Vue({
     render:h=>h(App),
 }).$mount('#app')
